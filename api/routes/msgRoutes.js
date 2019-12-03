@@ -2,6 +2,7 @@
 
 module.exports = function(app) {
   var messages = require('../controllers/msgController');
+  var appTest = require('../controllers/testController');
 
   //message Routes
 
@@ -15,4 +16,8 @@ module.exports = function(app) {
     .get(messages.read_a_message)
     .put(messages.update_a_message)
     .delete(messages.delete_a_message);
+
+  app
+    .route('/')
+    .get(appTest.appTest);
 };
