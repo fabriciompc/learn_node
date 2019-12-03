@@ -1,5 +1,6 @@
 'use strict';
 
 exports.appTest = function(req, res) {
-  res.json('Server On');
+  console.log('Server On');
+  res.json('Server On', Date.now);
 };
