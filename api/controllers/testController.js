@@ -15,6 +15,6 @@ exports.appTest = function(req, res) {
   }
   var today = dd + '/' + mm + '/' + yyyy;
 
-  let info = `Server ON - ${today}`;
+  let info = `Server ON Brazil - ${today}`;
   res.json(info);
 };
